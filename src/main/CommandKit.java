@@ -141,7 +141,7 @@ public class CommandKit implements CommandExecutor {
                         RegionManager regions = container.get(player.getWorld());
                         BlockVector pt1 = new BlockVector(player_location.getBlockX() - bound, 0, player_location.getBlockZ() - bound);
                         BlockVector pt2 = new BlockVector(player_location.getBlockX() + bound, 256, player_location.getBlockZ() + bound);
-                        String claim_name = String.format("%s-%d", player_name.split(".wam")[0], (int) (5 + Math.random() * 10 + 555));
+                        String claim_name = String.format("%s-%d", player_name.split(".wam")[0], Utils.randint(0,99999));
                         ProtectedCuboidRegion region = new ProtectedCuboidRegion(claim_name, pt1, pt2);
                         DefaultDomain owners = new DefaultDomain();
                         owners.addPlayer(player_name);

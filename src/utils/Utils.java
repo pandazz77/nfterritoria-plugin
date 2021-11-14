@@ -11,6 +11,10 @@ public class Utils {
         return false;
     }
 
+    public static int randint(int min, int max){
+        return (int)(Math.random()*max+min);
+    }
+
     public static String ArrayListToJson(ArrayList<Object> arraylist){
         JSONArray jsarray = new JSONArray();
         for(Object obj: arraylist){
