@@ -1,0 +1,11 @@
+main: main.NftGiver
+name: NftGiver
+version: 0.1
+author: Pandazz
+description: NftGiver
+
+commands:
+  nft:
+    description: nft-command description
+    usage: /<command>
+    permission: nft.permission
