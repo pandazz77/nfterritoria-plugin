@@ -19,7 +19,7 @@ public class Database{
     private static final String PORT = "3306";
     private static final String DB_NAME = "mc_server";
     private static final String USER = "server";
-    private static final String PASSWD = "serv92391moh8.SUP";
+    private static final String PASSWD = "passwd;
 
 
     private static Connection connection;
